@@ -14,6 +14,7 @@ let handle = document.getElementById('handle');
 let btn = document.getElementById('send');
 let output = document.getElementById('output');
 let type = document.getElementById('typer');
+let chatBox = document.getElementById('chat-window')
 
 //Emit events
 
@@ -34,6 +35,7 @@ socket.on('chat', function (data) {
     output.innerHTML += `
         <p><strong> ${data.handle} : </strong> ${data.message}</p>
     `;
+    chatBox.scrollTop =  output.scrollHeight ;
 });
 
 
