@@ -67,3 +67,8 @@ button{
     width: 100%;
     border-radius: 0 0 2px 2px;
 }
+
+#typer {
+    color: rgb(194, 194, 194);
+    margin: 10px;
+}
